@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(../image/cosmetic-brushes-pink-mist-powder-dark-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+ul li {
+  list-style-type: none;
+}
+.header a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.header ul li {
+  color: rgb(247, 168, 220);
+
+  padding: 0.5rem 0;
+  flex-direction: row;
+  flex-flow: row wrap;
+  display: inline-flex;
+  align-items: center;
+
+  margin: 0 1.5rem;
+
+  position: fixed;
+}
+.header * {
+  display: flex;
+  width: 50%;
+  float: right;
+  padding-bottom: 0.5rem;
+}
+header {
+  position: static;
+  top: 0;
+  width: 80%;
+  padding: 1rem;
+
+  align-items: center;
+  float: right;
+  justify-content: flex-end;
+}
+
+.icon h4 {
+  position: fixed;
+
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(321, 83%, 81%);
+  margin: 0 2.5rem;
+}
+
+.content_left {
+  width: 40%;
+  padding: 2rem;
+  margin: 100px;
+
+  float: left;
+  animation: left 2s ease-out forwards;
+  opacity: 0;
+}
+@keyframes left {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.content_left .black {
+  color: black;
+  background-color: rgb(240, 169, 208);
+  text-align: center;
+  display: inline-flex;
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  font-size: 80px;
+}
+
+.content_left .pink {
+  color: hsl(321, 90%, 69%);
+  font-size: 100px;
+}
+
+.content_left .parag {
+  color: rgb(253, 209, 251);
+  font-size: 20px;
+  display: block;
+  padding: 1.5rem 0;
+}
+
+.content_left .button {
+  display: inline;
+}
+.content_left .show {
+  border: 1px solid rgb(253, 209, 251);
+  color: rgb(253, 231, 252);
+  font-size: 15px;
+
+  width: 150px;
+  padding: 1rem;
+}
+
+.content_left a {
+  text-decoration: none;
+
+  color: rgb(253, 231, 252);
+}
+
+.content_left i {
+  float: right;
+}
+
+.content_right .vertical {
+  writing-mode: vertical-lr;
+  font-size: 200px;
+  color: hsl(321, 90%, 69%);
+  float: right;
+  padding: 2rem;
+  animation: fall 2s ease-out forwards;
+  opacity: 0;
+}
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+a:hover {
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  color: aqua;
+}
+a {
+  transition: all 0.3s ease-in-out;
+}
+.time {
+  width: 100px;
+  margin: 2rem;
+  position: absolute;
+}
+span {
+  color: rgb(247, 0, 255);
+  font-size: 20px;
+}
+.icon #logo {
+  width: 50px;
+  position: absolute;
+  padding-right: 20px;
+}

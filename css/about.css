@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 70px;
+  position: relative;
+}
+ul li {
+  list-style-type: none;
+}
+.header a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.header ul li {
+  color: rgb(247, 168, 220);
+
+  padding: 0.5rem 0;
+  flex-direction: row;
+  flex-flow: row wrap;
+  display: inline-flex;
+  align-items: center;
+
+  margin: 0 1.5rem;
+  padding: 0;
+}
+.header * {
+  display: flex;
+  width: 50%;
+  float: right;
+  flex-direction: row;
+
+  padding-bottom: 0.5rem;
+  z-index: 1000;
+}
+
+header {
+  background: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+
+  align-items: center;
+
+  padding-left: 25rem;
+
+  border: none;
+  z-index: 1000;
+}
+.icon h4 {
+  position: fixed;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(321, 83%, 81%);
+  margin: 0 2.5rem;
+}
+a:hover {
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  color: aqua;
+}
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+.photo_top {
+  background-image: url(../image/Pink\ Cosmetic\ _\ Wallpaper\ Idea.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-position: center;
+
+  margin-top: 7rem;
+
+  z-index: -1000;
+  overflow: hidden;
+}
+
+.photo_top h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: hsl(0, 0%, 0%);
+  margin: 0 2.5rem;
+  text-align: center;
+  padding: 4rem;
+  z-index: 1000;
+}
+
+.content_left {
+  justify-content: right;
+  margin: 10rem 5rem 5rem;
+
+  z-index: -1000;
+  width: 25%;
+  padding: 5rem 2rem;
+
+  animation: left 2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes left {
+  0% {
+    transform: translatex(-100vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+.content_left h2 {
+  color: rgb(250, 229, 253);
+  text-align: center;
+  display: inline-flex;
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  font-size: 100px;
+}
+.content_left p {
+  color: white;
+
+  font-size: 20px;
+}
+
+.content_right {
+  margin: 10rem 5rem;
+  width: 30%;
+
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  animation: right 2s ease-out forwards;
+  opacity: 0;
+}
+@keyframes right {
+  0% {
+    transform: translatex(100vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+.content {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px 0;
+  padding: 0;
+
+  height: 100vh;
+}
+
+.footer {
+  background-color: #7f0083;
+  text-align: center;
+  color: white;
+  padding: 15px 0;
+  font-size: 15px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon #logo {
+  width: 50px;
+  position: absolute;
+  padding-right: 20px;
+}
